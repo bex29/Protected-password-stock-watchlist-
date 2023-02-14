@@ -6,3 +6,10 @@ git status  | to see what changes you made
 git add  | to add the changes you made 
 git commit -m "message" | to commit the changes you made to your git branch 
 git push | to push your changes to github or URL 
+
+
+I love Naman so much because he's so cool 
+
+
+                            Feb 13th 
+1) I created an html file
