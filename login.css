@@ -1,72 +1,114 @@
 /*login column*/
-body{
-    border-style: solid;
-    border-width: 1px;
-    padding:5px;
-    width:auto;
-    height: auto;
-    line-height: 5em;
-    position: absolute;
-    align-items: center;
-    
+@import url("https://fonts.googleapis.com/css2?family=poppins+sans-serif");
+*{
+    margin:0;
+    padding : 0;
+    font-family:"poppins",sans-serif; 
 }
-/*Heading 1*/
-h1{
-    text-align: center;
-}
-/*button*/
-button {
-  align-items: center;
-  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
-  border: 0;
-  border-radius: 8px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  display: flex;
-  font-family: Phantomsans, sans-serif;
-  font-size: 20px;
+section{
+  display:flex;
   justify-content: center;
-  line-height: 1em;
-  max-width: 100%;
-  min-width: 140px;
-  padding: 3px;
+  align-items: center;
+  min-height:100vh;
+  width:100%;
+  background : url("./resources/loginbg/7187391.jpg")no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+.form-box{
+  position:relative;
+  width:400px;
+  height:450px;
+  background: transparent;
+  backdrop-filter:blur(15px);
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius:20px;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+h2{
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+}
+.inputbox{
+  position:relative;
+  margin: 30px 0;
+  width:310px;
+  border-bottom: 2px solid #fff;
+}
+.inputbox label{
+  position:absolute;
+  top:50%;
+  left:5px;
+  transform:translateY(-50%);
+  color:#fff;
+  font-size:1em;
+  pointer-events: none;
+  transition:1s;
+  font-weight: 800;
+}
+input:focus ~ label,
+input:valid ~ label{
+  top: -5px;
+}
+.inputbox input{
+  width:100%;
+  height:50px;
+  background:transparent;
+  border: none;
+  outline:none;
+  font-size:1em ;
+  padding:0 35px 0 5px;
+  color:#fff;
+}
+.forget{
+  margin: -15px 0 15px;
+  font-size: .9em;
+  color:#fff;
+  display:flex;
+  justify-content:center;
+}
+.forget label input{
+  margin-right: 3px;
+}
+.forget label a{
+  color:#fff;
   text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
+}
+.forget label a:hover{
+  text-decoration: underline;
+}
+button{
+  width:100%;
+  height:40px;
+  border-radius: 40px;
+  background:#fff;
+  border: none;
+  outline:none;
   cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
 }
-
-button:active,
-button:hover {
-  outline: 0;
+.register{
+  font-size:.9em;
+  color:#fff;
+  text-align: center;
+  margin:25px 0 10px;
 }
-
-button span {
-  background-color: rgb(5, 6, 45);
-  padding: 16px 24px;
-  border-radius: 6px;
-  width: 100%;
-  height: 100%;
-  transition: 300ms;
+.register p a{
+  text-decoration: none;
+  color:#fff;
+  font-weight:600;
 }
-
-button:hover span {
-  background: none;
+.register p a:hover{
+  text-decoration: underline;
 }
-
-@media (min-width: 768px) {
-  button {
-    font-size: 24px;
-    min-width: 196px;
-  }
-}
-
-
-/*footer */
-.copyright{
-    text-align: center;
-    color: blue;
+.footer p{
+  background:transparent;
+  text-align: center;
+  font-weight: 1000;
+  position:relative;
 }

@@ -7,12 +7,30 @@
         <!--<script src="main_java.js"></script>-->
     </head>
     <body>
-        <div class="LoginColumn">
-            <h1>Protected Diary</h1>
-            Login: <input class="login" id="username" type="text"><br>                      <!--username entry-->
-            Password:  <input class="login" id="password" type="text"><br>                  <!--password entry-->
-            <button>Login</button>
-        </div>
+        <section>
+            <div class="form-box"> 
+                <div class="form-value">
+                    <form action="">
+                        <h2>Login</h2>
+                        <div class="inputbox">
+                            <input type="email" required>                    <!--username entry-->
+                            <label for="">Email</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="password" required>                      <!--password entry-->
+                            <label for="">Password</label>
+                        </div>                
+                        <div class="forget">
+                            <label><input type="checkbox">Remember me <a href=""> Forget Password</a></label>
+                        </div>
+                        <button>Login</button>
+                        <div class="register">
+                            <p>Don't have a account <a href="#"> Register</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
         <footer>
             <p id="copyright">&#169;Developed by Full Stack Wolves</p>
         </footer>
