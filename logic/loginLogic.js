@@ -19,10 +19,10 @@ function checkUserEmailPassword(oneEmail, onePassword) {
       if (testUsers[i].password == onePassword) {
         console.log("executed the second if statement");
         window.location.href = "../pages/mainPage.html";
+      } else {
+        console.log("executed the else statement");
+        window.location.href = "../pages/testPage.html";
       }
-    } else {
-      console.log("executed the else statement");
-      //window.location.href = "../pages/testPage.html";
     }
   }
 }
