@@ -21,7 +21,7 @@ form.addEventListener("submit", (ev) => {
   let password = document.getElementById("password").value;
   let email = document.getElementById("email").value;
   testUsers.push(username, password, email);
-  //window.location.href = "../pages/loginPage.html";
+  window.location.href = "../pages/loginPage.html";
   console.log(testUsers);
 });
 
