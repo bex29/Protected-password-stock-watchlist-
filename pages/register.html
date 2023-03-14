@@ -10,30 +10,26 @@
     <section>
       <div class="form-box">
         <div class="form-value">
-          <form action="">
+          <form id="form" action="">
             <h2>Register</h2>
             <div class="inputbox">
-              <input type="email" required />
-              <!--username entry-->
+              <input id="username" type="text" required />
+
+              <label for="">username</label>
+            </div>
+            <div class="inputbox">
+              <input type="email" required id="email" />
+
               <label for="">Email</label>
             </div>
             <div class="inputbox">
-              <input type="password" required />
-              <!--password entry-->
+              <input type="password" id="password" />
+
               <label for="">Password</label>
             </div>
-            <div class="forget">
-              <label
-                ><input type="checkbox" />Remember me
-                <a href=""> Forget Password</a></label
-              >
-            </div>
-            <a href="./mainPage.html"><button>Login</button></a>
-            <div class="register">
-              <p>
-                Don't have a account <a href="./register.html"> Register</a>
-              </p>
-            </div>
+            <a href="./mainPage.html"
+              ><button type="submit">Register</button></a
+            >
           </form>
         </div>
       </div>
@@ -41,5 +37,6 @@
     <footer>
       <p id="copyright">&#169;Developed by Full Stack Wolves</p>
     </footer>
+    <script src="../logic/script.js"></script>
   </body>
 </html>
