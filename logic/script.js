@@ -13,6 +13,15 @@ let testUsers = [
   { usernmae: "Tosia", password: "omgNerd5000", email: "bigNerd@nerd.ca" },
 ];
 
+function checkPassword(password) {
+  if (password.length < 8) {
+    // window.location.href = "../pages/testPageLogin.html";
+    console.log("password is less than 8");
+    return false;
+  }
+  return true;
+}
+
 const form = document.getElementById("form");
 console.log("made it");
 form.addEventListener("submit", (ev) => {
@@ -23,6 +32,10 @@ form.addEventListener("submit", (ev) => {
   testUsers.push(username, password, email);
   window.location.href = "../pages/loginPage.html";
   console.log(testUsers);
+
+  if (!checkPassword(password)) {
+    document.getElementById("password").className = "test";
+  }
 });
 
 console.log(testUsers);

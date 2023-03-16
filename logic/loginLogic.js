@@ -18,19 +18,27 @@ function checkUserEmailPassword(oneEmail, onePassword) {
 
       if (testUsers[i].password == onePassword) {
         console.log("executed the second if statement");
-        window.location.href = "../pages/mainPage.html";
-      } else {
-        console.log("executed the else statement");
-        window.location.href = "../pages/testPage.html";
+        return true;
+        //window.location.href = "../pages/mainPage.html";
       }
-    }
+    } //else {
+    //   console.log("executed the else statement");
+    //   //window.location.href = "../pages/testPage.html";
+    // }
   }
+  return false;
+  //window.location.href = "../pages/testPage.html";
 }
+
 
 loginForm.addEventListener("submit", (ev) => {
   ev.preventDefault();
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
   console.log(email, password);
-  checkUserEmailPassword(email, password);
+  // if (checkUserEmailPassword(email, password)) {
+  //   window.location.href = "../pages/mainPage.html";
+  // } else {
+  //   window.location.href = "../pages/testPage.html";
+  // }
 });
