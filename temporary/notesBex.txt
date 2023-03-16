@@ -10,7 +10,6 @@ git push | to push your changes to github or URL
 
 I love Naman so much because he's so cool 
 
-
                             Feb 13th 
 <<<<<<< HEAD
 1) I created an html file
@@ -18,3 +17,5 @@ I love Naman so much because he's so cool
 =======
 1) I created an html file∏
 >>>>>>> 3e7514bcec17f05fb8680b80b58ce68ca03f008c
+                            March 16th 
+                    
