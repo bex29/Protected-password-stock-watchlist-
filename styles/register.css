@@ -19,7 +19,7 @@ section{
 .form-box{
   position:relative;
   width:400px;
-  height:450px;
+  height:550px;
   background: transparent;
   backdrop-filter:blur(15px);
   border: 2px solid rgba(255,255,255,0.5);
@@ -36,7 +36,7 @@ h2{
 .inputbox{
   position:relative;
   margin: 30px 0;
-  width:310px;
+  width:300px;
   border-bottom: 2px solid #fff;
 }
 .inputbox label{
@@ -64,23 +64,24 @@ input:valid ~ label{
   padding:0 35px 0 5px;
   color:#fff;
 }
-.forget{
+/*
+.sign{
   margin: -15px 0 15px;
   font-size: .9em;
   color:#fff;
   display:flex;
   justify-content:center;
 }
-.forget label input{
+.sign label input{
   margin-right: 3px;
 }
-.forget label a{
+.sign label a{
   color:#fff;
   text-decoration: none;
 }
-.forget label a:hover{
+.sign label a:hover{
   text-decoration: underline;
-}
+}*/
 button{
   width:100%;
   height:40px;
@@ -96,21 +97,22 @@ button:hover{
   background-color: black;
   color:#fff;
 }
-.register{
+.sign{
   font-size:.9em;
   color:#fff;
   text-align: center;
   margin:25px 0 10px;
 }
-.register p a{
+.sign p a{
   text-decoration: none;
   color:#fff;
   font-weight:600;
 }
-.register p a:hover{
+.sign p a:hover{
   text-decoration: underline;
 }
 .footer p{
+  position:relative;
   background:transparent;
   text-align: center;
   font-weight: 1000;

@@ -5,36 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign up</title>
+    <link href="../styles/register.css" rel="stylesheet"></link>
   </head>
   <body>
     <section>
       <div class="form-box">
         <div class="form-value">
-          <form id="form" action="">
+          <form id="form" action="" id="Register">
             <h2>Register</h2>
             <div class="inputbox">
               <input id="username" type="text" required />
-
-              <label for="">username</label>
+              <label for="">Username</label>
             </div>
             <div class="inputbox">
               <input type="email" required id="email" />
-
               <label for="">Email</label>
             </div>
             <div class="inputbox">
-              <input type="password" id="password" />
-
+              <input id="password" type="password" required />
               <label for="">Password</label>
             </div>
-            <a href="./mainPage.html"
-              ><button type="submit">Register</button></a
-            >
+            <div class="inputbox">
+              <input type="password" required id="password" />
+              <label for="">Confirm Password</label>
+            </div>
+            <a href="./mainPage.html"><button type="submit">Register</button></a>
+            <div class="sign">
+              <p>
+                <a href="./loginPage.html">Sign In Instead</a>
+              </p>
+            </div>
           </form>
         </div>
       </div>
     </section>
-    <footer>
+    <footer class="footer">
       <p id="copyright">&#169;Developed by Full Stack Wolves</p>
     </footer>
     <script src="../logic/script.js"></script>
