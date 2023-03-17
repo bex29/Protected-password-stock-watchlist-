@@ -12,18 +12,19 @@
     padding-left: 5%;
     display: inline-block;
     font-size: 2.5vw;   
+    padding: 0 40% 0 0;
 }
 .headerNote{
     color: white;
     display: inline-block;
-    padding: 0 8% 0 40%;
+    border-bottom: solid white 2px;
+    padding: 0 0 0 0;
 }
 .headerAbout{
     color: white;
     font-style: italic;
-    border-bottom: solid white 2px;
     display: inline-block;
-    padding: 0 0 0 0;
+    padding: 0 0 0 8%;
 }
 .headerLogout{
     color: white;

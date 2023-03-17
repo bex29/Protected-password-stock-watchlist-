@@ -37,7 +37,6 @@ body{
     background: lightgray;
 }
 section{
-    border: solid red 3px;
     padding: 5px;
     position: absolute;
 }
@@ -46,9 +45,60 @@ section{
     position: relative;
     padding: 10px;
     margin:10px;
+    overflow: auto ;
 }
-i{
+#i1{
     color:black;
-    ;
+    float: left;
+}
+#i2{
+    color:black;
+    float: right;
+}
+#i3{
+    color:black;
+    float: left;
+}
+.content{
+    text-align:justify;
+}
+.round1{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    float: right;
+    border: black solid;
+    shape-outside: circle();
+    background-image: url("../resources/aboutus/takhmina.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    margin:5px;
+}
+.round2{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    float: left;
+    border: black solid;
+    shape-outside: circle();
+    background-image: url("../resources/aboutus/naman.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    margin:5px;
+}
+.round3{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    float: right;
+    border: black solid;
+    shape-outside: circle();
+    background-image: url("../resources/aboutus/beck.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    color: white;
+    margin:5px;
 }
 
