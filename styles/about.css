@@ -61,6 +61,7 @@ section{
 }
 .content{
     text-align:justify;
+    font-size: 1.4vw;
 }
 .round1{
     width: 200px;
@@ -101,4 +102,3 @@ section{
     color: white;
     margin:5px;
 }
-
