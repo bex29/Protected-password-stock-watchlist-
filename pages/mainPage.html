@@ -6,214 +6,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main Page</title>
     <link href="../styles/main.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="header">
-      <p class="HeaderHeading">Diary</p>
-      <a href="./mainPage.html" class="headerNote">Notes</a>
-      <a href="./about.html" class="headerAbout">About Us</a>
-      <a href="./loginPage.html" class="headerLogout">Log Out</a>
-    </div>
-    Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry. Lorem Ipsum has been the industry's standard dummy text
-    ever since the 1500s, when an unknown printer took a galley of type
-    and scrambled it to make a type specimen book. It has survived not
-    only five centuries, but also the leap into electronic typesetting,
-    remaining essentially unchanged. It was popularised in the 1960s
-    with the release of Letraset sheets containing Lorem Ipsum passages,
-    and more recently with desktop publishing software like Aldus
-    PageMaker including versions of Lorem Ipsum.
-  </body>
-  <section class="widget2">
-    <script>
-      (function(d, s, id) {
-          if (d.getElementById(id)) {
-              if (window.__TOMORROW__) {
-                  window.__TOMORROW__.renderWidget();
-              }
-              return;
-          }
-          const fjs = d.getElementsByTagName(s)[0];
-          const js = d.createElement(s);
-          js.id = id;
-          js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
-
-          fjs.parentNode.insertBefore(js, fjs);
-      })(document, 'script', 'tomorrow-sdk');
-      </script>
-
-      <div class="tomorrow"
-         data-location-id="016762"
-         data-language="EN"
-         data-unit-system="METRIC"
-         data-skin="light"
-         data-widget-type="upcoming"
-         style="padding-bottom:22px;position:relative;"
-      >
-        <a
-          href="https://www.tomorrow.io/weather-api/"
-          rel="nofollow noopener noreferrer"
-          target="_blank"
-          style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"
-        >
-          <img
-            alt="Powered by the Tomorrow.io Weather API"
-            src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
-            width="250"
-            height="18"
-          />
-        </a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+    <header>
+      <div class="header">
+        <p class="HeaderHeading">Diary</p>
+        <a href="./mainPage.html" class="headerNote">Notes</a>
+        <a href="./about.html" class="headerAbout">About Us</a>
+        <a href="./loginPage.html" class="headerLogout">Log Out</a>
       </div>
-  </section>
-  <br>
-  <section class="widget">
-    <div class="tradingview-widget-container">
-      <div class="tradingview-widget-container__widget"></div>
-      <div class="tradingview-widget-copyright">
-        <a
-          href="https://www.tradingview.com/markets/indices/"
-          rel="noopener"
-          target="_blank"
-          ><span class="blue-text">Indices</span></a
-        >,
-        <a
-          href="https://www.tradingview.com/markets/futures/"
-          rel="noopener"
-          target="_blank"
-          ><span class="blue-text">Futures</span></a
-        >
-        <span class="blue-text">and</span>
-        <a
-          href="https://www.tradingview.com/markets/bonds/"
-          rel="noopener"
-          target="_blank"
-          ><span class="blue-text">Bonds</span></a
-        >
-        by TradingView
-        <br />
-        <a
-          href="https://ca.finance.yahoo.com/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAALvcrBhVdlEEM18T6j4zjiCnMuP35TWfWb6GdOCJHWDSROiUxjqNmv9bcRKiF60emg_MmTYvBez5aApFDLKEuyKoKySF4p4FTeZOAa9xWi1-LznUW9UqL94bPzgyiV6KL7sM_FKQpFUMsyIWYEFSuL88AV9K6jTXXUXUnzL60Z14"
-        >
-          or Yahoo</a
-        >
-      </div>
-
-    <script
-      type="text/javascript"
-      src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js"
-      async 
-    >
+    </header>
+    <section class="stock">
+          <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
         {
-        // "colorTheme": "light",
-        // "dateRange": "12M",
-        // "showChart": true,
-        // "locale": "en",
-        // "largeChartUrl": "",
-        // "isTransparent": false,
-        // "showSymbolLogo": true,
-        // "showFloatingTooltip": false,
-        // "width": "400",
-        // "height": "660",
-        // "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
-        // "plotLineColorFalling": "rgba(41, 98, 255, 1)",
-        // "gridLineColor": "rgba(240, 243, 250, 0)",
-        // "scaleFontColor": "rgba(106, 109, 120, 1)",
-        // "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
-        // "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
-        // "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
-        // "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
-        // "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
-        // "tabs":
-        [
+        "symbols"; [
           {
-            "title": "Indices",
-            "symbols": [
-              {
-                "s": "FOREXCOM:SPXUSD",
-                "d": "S&P 500"
-              },
-              {
-                "s": "FOREXCOM:NSXUSD",
-                "d": "US 100"
-              },
-              {
-                "s": "FOREXCOM:DJI",
-                "d": "Dow 30"
-              },
-              {
-                "s": "INDEX:NKY",
-                "d": "Nikkei 225"
-              },
-              {
-                "s": "TSX:TSX",
-                "d": "Toronto Stock Exhange"
-              }
-            ],
-            "originalTitle": "Indices"
+            "proName": "FOREXCOM:SPXUSD",
+            "title": "S&P 500"
           },
           {
-            "title": "Futures",
-            "symbols": [
-              {
-                "s": "CME_MINI:ES1!",
-                "d": "S&P 500"
-              },
-              {
-                "s": "CME:6E1!",
-                "d": "Euro"
-              },
-              {
-                "s": "COMEX:GC1!",
-                "d": "Gold"
-              },
-              {
-                "s": "NYMEX:CL1!",
-                "d": "Crude Oil"
-              },
-              {
-                "s": "NYMEX:NG1!",
-                "d": "Natural Gas"
-              },
-              {
-                "s": "CBOT:ZC1!",
-                "d": "Corn"
-              }
-            ],
-            "originalTitle": "Futures"
+            "proName": "FOREXCOM:NSXUSD",
+            "title": "US 100"
           },
           {
-            "title": "Bonds",
-            "symbols": [
-              {
-                "s": "CME:GE1!",
-                "d": "Eurodollar"
-              },
-              {
-                "s": "CBOT:ZB1!",
-                "d": "T-Bond"
-              },
-              {
-                "s": "CBOT:UB1!",
-                "d": "Ultra T-Bond"
-              },
-              {
-                "s": "EUREX:FGBL1!",
-                "d": "Euro Bund"
-              },
-              {
-                "s": "EUREX:FBTP1!",
-                "d": "Euro BTP"
-              },
-              {
-                "s": "EUREX:FGBM1!",
-                "d": "Euro BOBL"
-              }
-            ],
-            "originalTitle": "Bonds"
+            "proName": "FX_IDC:EURUSD",
+            "title": "EUR/USD"
+          },
+          {
+            "proName": "BITSTAMP:BTCUSD",
+            "title": "Bitcoin"
+          },
+          {
+            "proName": "BITSTAMP:ETHUSD",
+            "title": "Ethereum"
           }
-        ]
+        ],
+        "showSymbolLogo"; true,
+        "colorTheme"; "dark",
+        "isTransparent"; false,
+        "displayMode"; "adaptive",
+        "locale"; "en"
       }
-    </script>
-  </section>
-  </div>
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </section>
+    <div class="flex-container">
+      <div class="entry">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text
+        ever since the 1500s, when an unknown printer took a galley of type
+        and scrambled it to make a type specimen book. It has survived not
+        only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s
+        with the release of Letraset sheets containing Lorem Ipsum passages,
+        and more recently with desktop publishing software like Aldus
+        PageMaker including versions of Lorem Ipsum.
+        xLorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text
+        ever since the 1500s, when an unknown printer took a galley of type
+        and scrambled it to make a type specimen book. It has survived not
+        only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s
+        with the release of Letraset sheets containing Lorem Ipsum passages,
+        and more recently with desktop publishing software like Aldus
+        PageMaker including versions of Lorem Ipsum.<br>
+        <a href=""><i class="fa fa-trash-o">&emsp;Delete&emsp;</i></a>
+        <a href=""><i class="fa fa-pencil">&emsp;Edit&emsp;&emsp;</i></a>
+      </div>
+      <section class="weather">
+        <script>
+          (function(d, s, id) {
+              if (d.getElementById(id)) {
+                  if (window.__TOMORROW__) {
+                      window.__TOMORROW__.renderWidget();
+                  }
+                  return;
+              }
+              const fjs = d.getElementsByTagName(s)[0];
+              const js = d.createElement(s);
+              js.id = id;
+              js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+
+              fjs.parentNode.insertBefore(js, fjs);
+          })(document, 'script', 'tomorrow-sdk');
+          </script>
+
+          <div class="tomorrow"
+            data-location-id="016762"
+            data-language="EN"
+            data-unit-system="METRIC"
+            data-skin="light"
+            data-widget-type="upcoming"
+            style="padding-bottom:22px;position:relative;"
+          >
+            <a
+              href="https://www.tomorrow.io/weather-api/"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+              style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"
+            >
+              <img
+                alt="Powered by the Tomorrow.io Weather API"
+                src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
+                width="250"
+                height="18"
+              />
+            </a>
+          </div>
+      </section>
+    </div>
+  </body>
 </html>
