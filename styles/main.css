@@ -33,6 +33,7 @@
 }
 a:hover,a:visited,a:active,a:link{
     text-decoration: none;
+    color: black;
 }
 .stock{
     height: 100%;
@@ -63,6 +64,6 @@ a:hover,a:visited,a:active,a:link{
     flex-wrap: wrap;
     justify-content: space-between;    
 }
-a{
+#button{
     float:right;
 }
