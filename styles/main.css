@@ -33,7 +33,6 @@
 }
 a:hover,a:visited,a:active,a:link{
     text-decoration: none;
-    color: black;
 }
 .stock{
     height: 100%;
@@ -41,29 +40,48 @@ a:hover,a:visited,a:active,a:link{
 .weather{
     margin-top:25px;
     flex-shrink: 2;
-    width: 25%;
+    width: fit-content;
     align-self:center;
+    border: black solid;
+    margin: auto;
 }
-.entry{
-    border: solid black 0.5px;
-    text-align: center;
-    border-radius: 30px;
-    height: fit-content;
-    max-width: 65%;
-    flex-shrink: 1;
-    margin-top: 25px;
-    padding: 15px;
-    position: relative;
-    background-color: lightgray;
+body{
+    background-color:lightyellow;
 }
 .flex-container{
     display: flex;
     height: 100%;
     width: 100%;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;    
+    flex-wrap: wrap;  
 }
-#button{
+.sub-flex{
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 75%;
+    padding: 5px;
+    border: red solid;
+    justify-content: center;
+    overflow: scroll;
+}
+.entry{
+    border: solid black 0.5px;
+    text-align: center;
+    border-radius: 30px;
+    height: fit-content;
+    margin-top: 25px;
+    padding: 15px;
+    background-color: lightgray;
+    align-content: center;
+}
+.edit-delete{
     float:right;
+    color: black;
+}
+
+.inputbox{
+    margin-top: 25px;
+    width: 100%;
+    height: 100%;
 }
