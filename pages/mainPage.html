@@ -14,41 +14,94 @@
       <a href="./about.html" class="headerAbout">About Us</a>
       <a href="./loginPage.html" class="headerLogout">Log Out</a>
     </div>
+    Lorem Ipsum is simply dummy text of the printing and typesetting
+    industry. Lorem Ipsum has been the industry's standard dummy text
+    ever since the 1500s, when an unknown printer took a galley of type
+    and scrambled it to make a type specimen book. It has survived not
+    only five centuries, but also the leap into electronic typesetting,
+    remaining essentially unchanged. It was popularised in the 1960s
+    with the release of Letraset sheets containing Lorem Ipsum passages,
+    and more recently with desktop publishing software like Aldus
+    PageMaker including versions of Lorem Ipsum.
   </body>
-  <div class="tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
-    <div class="tradingview-widget-copyright">
-      <a
-        href="https://www.tradingview.com/markets/indices/"
-        rel="noopener"
-        target="_blank"
-        ><span class="blue-text">Indices</span></a
-      >,
-      <a
-        href="https://www.tradingview.com/markets/futures/"
-        rel="noopener"
-        target="_blank"
-        ><span class="blue-text">Futures</span></a
+  <section class="widget2">
+    <script>
+      (function(d, s, id) {
+          if (d.getElementById(id)) {
+              if (window.__TOMORROW__) {
+                  window.__TOMORROW__.renderWidget();
+              }
+              return;
+          }
+          const fjs = d.getElementsByTagName(s)[0];
+          const js = d.createElement(s);
+          js.id = id;
+          js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+
+          fjs.parentNode.insertBefore(js, fjs);
+      })(document, 'script', 'tomorrow-sdk');
+      </script>
+
+      <div class="tomorrow"
+         data-location-id="016762"
+         data-language="EN"
+         data-unit-system="METRIC"
+         data-skin="light"
+         data-widget-type="upcoming"
+         style="padding-bottom:22px;position:relative;"
       >
-      <span class="blue-text">and</span>
-      <a
-        href="https://www.tradingview.com/markets/bonds/"
-        rel="noopener"
-        target="_blank"
-        ><span class="blue-text">Bonds</span></a
-      >
-      by TradingView
-      <br />
-      <a
-        href="https://ca.finance.yahoo.com/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAALvcrBhVdlEEM18T6j4zjiCnMuP35TWfWb6GdOCJHWDSROiUxjqNmv9bcRKiF60emg_MmTYvBez5aApFDLKEuyKoKySF4p4FTeZOAa9xWi1-LznUW9UqL94bPzgyiV6KL7sM_FKQpFUMsyIWYEFSuL88AV9K6jTXXUXUnzL60Z14"
-      >
-        or Yahoo</a
-      >
-    </div>
+        <a
+          href="https://www.tomorrow.io/weather-api/"
+          rel="nofollow noopener noreferrer"
+          target="_blank"
+          style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"
+        >
+          <img
+            alt="Powered by the Tomorrow.io Weather API"
+            src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
+            width="250"
+            height="18"
+          />
+        </a>
+      </div>
+  </section>
+  <br>
+  <section class="widget">
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <div class="tradingview-widget-copyright">
+        <a
+          href="https://www.tradingview.com/markets/indices/"
+          rel="noopener"
+          target="_blank"
+          ><span class="blue-text">Indices</span></a
+        >,
+        <a
+          href="https://www.tradingview.com/markets/futures/"
+          rel="noopener"
+          target="_blank"
+          ><span class="blue-text">Futures</span></a
+        >
+        <span class="blue-text">and</span>
+        <a
+          href="https://www.tradingview.com/markets/bonds/"
+          rel="noopener"
+          target="_blank"
+          ><span class="blue-text">Bonds</span></a
+        >
+        by TradingView
+        <br />
+        <a
+          href="https://ca.finance.yahoo.com/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAALvcrBhVdlEEM18T6j4zjiCnMuP35TWfWb6GdOCJHWDSROiUxjqNmv9bcRKiF60emg_MmTYvBez5aApFDLKEuyKoKySF4p4FTeZOAa9xWi1-LznUW9UqL94bPzgyiV6KL7sM_FKQpFUMsyIWYEFSuL88AV9K6jTXXUXUnzL60Z14"
+        >
+          or Yahoo</a
+        >
+      </div>
+
     <script
       type="text/javascript"
       src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js"
-      async
+      async 
     >
         {
         // "colorTheme": "light",
@@ -161,5 +214,6 @@
         ]
       }
     </script>
+  </section>
   </div>
 </html>
