@@ -46,6 +46,9 @@ function checkPassword(password) {
 
 // console.log(testUsers);
 
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname + "/client/pages/loginPage.html"));
+});
 app.get("/loginPage.html", (req, res) => {
   res.sendFile(path.join(__dirname + "/client/pages/loginPage.html"));
 });
