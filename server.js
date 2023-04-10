@@ -64,6 +64,9 @@ app.get("/about.html", (req, res) => {
 app.get("/test", (req, res) => {
   res.send("Hello World! Testing");
 });
+app.post("/", (req, res) => {
+  res.send("hallo");
+});
 
 app.listen(port, () => {
   console.log(`listening on port ${port}`);

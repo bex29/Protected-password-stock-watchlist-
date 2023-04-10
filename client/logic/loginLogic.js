@@ -30,15 +30,14 @@ function checkUserEmailPassword(oneEmail, onePassword) {
   //window.location.href = "../pages/testPage.html";
 }
 
-
 loginForm.addEventListener("submit", (ev) => {
   ev.preventDefault();
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
   console.log(email, password);
-  // if (checkUserEmailPassword(email, password)) {
-  //   window.location.href = "../pages/mainPage.html";
-  // } else {
-  //   window.location.href = "../pages/testPage.html";
-  // }
+  if (checkUserEmailPassword(email, password)) {
+    window.location.href = "../pages/mainPage.html";
+  } else {
+    window.location.href = "../pages/testPage.html";
+  }
 });
