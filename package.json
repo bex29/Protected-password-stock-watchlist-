@@ -4,7 +4,8 @@
   "description": "the project for 1012",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "nodemon index.js"
   },
   "repository": {
     "type": "git",
