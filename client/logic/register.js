@@ -13,6 +13,17 @@ let testUsers = [
   { usernmae: "Tosia", password: "omgNerd5000", email: "bigNerd@nerd.ca" },
 ];
 
+function showWrong(input, message) {
+  const formControl = input.parentElement;
+  formControl.className = "wrong";
+  const small = formControl.querySelector("small");
+  small.innerText = message;
+}
+
+function showRight(input, message) {
+  const formControl = input.parentElement;
+  formControl.className = "right";
+}
 function checkPassword(password) {
   if (password.length < 8) {
     // window.location.href = "../pages/testPageLogin.html";
@@ -21,8 +32,35 @@ function checkPassword(password) {
   }
   return true;
 }
+function isValidEmail(email) {
+  return String(email)
+    .toLowerCase()
+    .match(
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+}
 
-const form = document.getElementById("form");
+function checkLen(input, minimum, maximum) {
+  if (input.value.length < minimum || input.value.length > maximum) {
+    showWrong(input, "Please enter a decent sized input bro");
+  }
+}
+
+function matchPasswords(inputOne, inputTwo) {
+  if (inputTwo.value === "") {
+    showWrong(inputTwo, "You can't do empty bro");
+  } else if (inputOne.value === inputTwo.value) {
+    showRight(inputTwo);
+  } else {
+    showWrong(inputTwo, `passwords must match`);
+  }
+}
+function checkLowerCapitalCase(input) {
+  var regularExpression = /^[a-zA-Z0-9!@#$%^&*]{8,25}$/;
+  return String(input).match(regularExpression);
+}
+
+const form = document.getElementById("register");
 console.log("made it");
 form.addEventListener("submit", (ev) => {
   ev.preventDefault();
