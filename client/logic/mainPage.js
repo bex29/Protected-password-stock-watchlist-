@@ -8,11 +8,11 @@ function CreateEntry() {
   $(newDiv).attr("class", "entry");
   $(newDiv).attr("id", new_title);
   var title = document.createElement("h3");
-  $(title).attr("id",'h3');
+//   $(title).attr("id",'h3');
   $(title).append(new_title);
   $(newDiv).append(title);
   var info = document.createElement("p");
-  $(info).attr('id','p')
+//   $(info).attr('id','p')
   $(info).append(new_entry);
   $(newDiv).append(info);
   $(newDiv).append("<br>");
@@ -29,10 +29,12 @@ function CreateEntry() {
 function del(elem) {
   $(elem).parent("div").remove();
 }
-// function edit(elem) {
-//   new_title = prompt("PLEASE ENTER NEW TITLE : ");
-//   new_entry = prompt("PLEASE ENTER NEW DETAIL : ");
-//   $(elem).removeChild(document.getElementById("h3"));
-//   $(elem).removeChild(document.getElementById("p"));
-// //   $(elem).parent("div").document.getElementById("p").innerHTML(new_entry);
-// }
+function edit(elem) {
+  new_title = prompt("PLEASE ENTER NEW TITLE : ");
+  new_entry = prompt("PLEASE ENTER NEW DETAIL : ");
+  elem.parentElement.getElementsByTagName("h3")[0].innerHTML = new_title;
+  elem.parentElement.getElementsByTagName("p")[0].innerHTML = new_entry;
+//  $(elem).parent().getElementsByTagName("h3")[0].innerHTML=new_title;
+//   $(elem).parent("div").removeChild(document.getElementsByTagName("p"));
+//   $(elem).parent("div").document.getElementById("p").innerHTML(new_entry);
+}
