@@ -2,7 +2,7 @@ const loginForm = document.getElementById("loginForm");
 
 let testUsers = [
   { username: "Bex", password: "chad", email: "bex@chad.com" },
-  { username: "Naman", password: "Im a nerd", email: "Naman@nerd.ca" },
+  { username: "Naman", password: "1234", email: "Naman@york" },
   { username: "Tosia", password: "omgNerd5000", email: "bigNerd@nerd.ca" },
 ];
 

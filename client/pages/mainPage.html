@@ -8,8 +8,6 @@
   <title>Main Page</title>
   <link href="../styles/main.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
 </head>
 
 <body>
@@ -90,58 +88,14 @@
   </section>
 
 
-  <div class="entryList">
-    <div class="entry">
-      <h3>Entry #1</h3>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus nulla,
-      vehicula eu malesuada sed, pharetra eu orci. Donec vehicula ipsum ac dignissim
-      tincidunt. Vestibulum metus tellus, sodales nec gravida in, mattis consectetur lorem.
-      Praesent hendrerit, mi sed iaculis faucibus, urna velit vehicula velit, ac consectetur
-      augue ante id dui. Pellentesque tincidunt faucibus tincidunt. Lorem ipsum dolor sit amet,
-      consectetur adipiscing elit. Pellentesque in elit sed diam suscipit pretium a ut elit.
-      Sed tincidunt convallis ullamcorper. Praesent eu nulla a purus tincidunt ultricies.
-      <br>
-      <a class="edit-delete" href=""><i class="fa fa-trash-o">&emsp;Delete&emsp;</i></a>
-      <a class="edit-delete" href=""><i class="fa fa-pencil">&emsp;Edit&emsp;&emsp;</i></a>
-      <hr>
-    </div>
-
-    <div class="entry">
-      <h3>Entry #1</h3>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus nulla,
-      vehicula eu malesuada sed, pharetra eu orci. Donec vehicula ipsum ac dignissim
-      tincidunt. Vestibulum metus tellus, sodales nec gravida in, mattis consectetur lorem.
-      Praesent hendrerit, mi sed iaculis faucibus, urna velit vehicula velit, ac consectetur
-      augue ante id dui. Pellentesque tincidunt faucibus tincidunt. Lorem ipsum dolor sit amet,
-      consectetur adipiscing elit. Pellentesque in elit sed diam suscipit pretium a ut elit.
-      Sed tincidunt convallis ullamcorper. Praesent eu nulla a purus tincidunt ultricies.
-      <br>
-      <a class="edit-delete" href=""><i class="fa fa-trash-o">&emsp;Delete&emsp;</i></a>
-      <a class="edit-delete" href=""><i class="fa fa-pencil">&emsp;Edit&emsp;&emsp;</i></a>
-      <hr>
-    </div>
-
-    <div class="entry">
-      <h3>Entry #1</h3>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus nulla,
-      vehicula eu malesuada sed, pharetra eu orci. Donec vehicula ipsum ac dignissim
-      tincidunt. Vestibulum metus tellus, sodales nec gravida in, mattis consectetur lorem.
-      Praesent hendrerit, mi sed iaculis faucibus, urna velit vehicula velit, ac consectetur
-      augue ante id dui. Pellentesque tincidunt faucibus tincidunt. Lorem ipsum dolor sit amet,
-      consectetur adipiscing elit. Pellentesque in elit sed diam suscipit pretium a ut elit.
-      Sed tincidunt convallis ullamcorper. Praesent eu nulla a purus tincidunt ultricies.
-      <br>
-      <a class="edit-delete" href=""><i class="fa fa-trash-o">&emsp;Delete&emsp;</i></a>
-      <a class="edit-delete" href=""><i class="fa fa-pencil">&emsp;Edit&emsp;&emsp;</i></a>
-      <hr>
-    </div>
+  <div class="entryList" id="entryList">
   </div>
   <div class="inputArea">
     <div class="input">
-      <input type="text" placeholder="Enter the title" id="" name="title" class="titleBox"><br><br>
-      <textarea rows="5" cols="60" name="description" class="inputbox" placeholder="Enter your post here..."></textarea>
+      <input type="text" placeholder="Enter the title" id="Entry_Title" name="title" class="titleBox"><br><br>
+      <textarea rows="5" cols="60" name="description" class="inputbox" placeholder="Enter your post here..." id="Entry_info"></textarea>
       <br>
-      <button class="submit">Submit</button>
+      <button class="submit" onclick="CreateEntry()">Submit</button>
     </div>
 
 
@@ -151,5 +105,7 @@
   </footer>
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="../logic/mainPage.js"></script>
 
 </html>
