@@ -34,7 +34,4 @@ function edit(elem) {
   new_entry = prompt("PLEASE ENTER NEW DETAIL : ");
   elem.parentElement.getElementsByTagName("h3")[0].innerHTML = new_title;
   elem.parentElement.getElementsByTagName("p")[0].innerHTML = new_entry;
-//  $(elem).parent().getElementsByTagName("h3")[0].innerHTML=new_title;
-//   $(elem).parent("div").removeChild(document.getElementsByTagName("p"));
-//   $(elem).parent("div").document.getElementById("p").innerHTML(new_entry);
 }
