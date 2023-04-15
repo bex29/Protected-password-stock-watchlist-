@@ -1,148 +1,121 @@
 /*login column*/
 @import url("https://fonts.googleapis.com/css2?family=poppins+sans-serif");
-
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: 0.005em;
+  font-family: "poppins", sans-serif;
 }
-
-p {
-  font-weight: 300;
-  font-size: 1em;
-  line-height: 24px;
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: url("../resources/loginbg/7187391.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-
-h2 {
-  padding-bottom: 20px;
-}
-
-/* Divides the screen into left and right */
-.split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-/* Control the left side */
-.left {
-  left: 0;
-  background: linear-gradient(147deg, #447FE3 1.89%, #3125E7 103.34%);
-  color: #ffffff;
-
-}
-
-.left img {
-  padding-bottom: 50px;
-}
-
-/* Control the right side */
-.right {
-  right: 0;
-  background-color: #ffffff;
-}
-
-.right img {
-  padding-bottom: 35px;
-  width: 50%;
-}
-
-.right p {
-  color: #7F7F83;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
 .form-box {
   position: relative;
   width: 400px;
   height: 450px;
+  background: transparent;
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
-  padding: 35% 15%;
 }
-
+h2 {
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+}
 .inputbox {
   position: relative;
-  margin: 25px 0;
+  margin: 30px 0;
   width: 310px;
-  border: 1px solid #bcbcbc;
-  border-radius: 4px;
+  border-bottom: 2px solid #fff;
 }
-
-input {
+.inputbox label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1em;
+  pointer-events: none;
+  transition: 1s;
+  font-weight: 800;
+}
+input:focus ~ label,
+input:valid ~ label {
+  top: -5px;
+}
+.inputbox input {
   width: 100%;
-  height: 42px;
+  height: 50px;
   background: transparent;
   border: none;
   outline: none;
   font-size: 1em;
-  padding: 0 16px;
-  color: #272727;
+  padding: 0 35px 0 5px;
+  color: #fff;
 }
-
-::placeholder {
-  color: #bcbcbc;
+.forget {
+  margin: -15px 0 15px;
   font-size: 0.9em;
-
+  color: #fff;
+  display: flex;
+  justify-content: center;
 }
-
-.register {
-  color: #272727;
-  margin: 25px 0 10px;
+.forget label input {
+  margin-right: 3px;
 }
-
-.register p a {
+.forget label a {
+  color: #fff;
   text-decoration: none;
-  font-weight: 600;
-  color: #3125E7;
-  margin-left: 2px;
 }
-
-.register p a:hover {
+.forget label a:hover {
   text-decoration: underline;
 }
-
 button {
-  width: 60%;
-  height: 42px;
+  width: 100%;
+  height: 40px;
   border-radius: 40px;
-  margin-top: 10px;
-  background-image: linear-gradient(to right, #447FE3, #3125E7, #447FE3, #3125E7);
+  background: #fff;
   border: none;
   outline: none;
   cursor: pointer;
   font-size: 1em;
   font-weight: 600;
-  color: #ffffff;
-  background-size: 300% 100%;
-  -moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
 }
-
 button:hover {
-
-  color: #ffffff;
-  background-image: linear-gradient(to right, #447FE3, #3125E7, #447FE3, #3125E7);
-  background-position: 100% 20%;
-  -moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  background-color: black;
+  color: #fff;
+}
+.register {
+  font-size: 0.9em;
+  color: #fff;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+.register p a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+.register p a:hover {
+  text-decoration: underline;
+}
+.footer p {
+  background: transparent;
+  text-align: center;
+  font-weight: 1000;
+  position: relative;
 }
 
-
+.test {
+  background-color: red;
+}
