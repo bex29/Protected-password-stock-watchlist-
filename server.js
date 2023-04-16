@@ -1,12 +1,3 @@
-// const form = document.getElementById("register");
-// console.log("made it here");
-// console.log(form);
-// const form = document.getElementById("register");
-// console.log(form);
-// form.addEventListener((e) => {
-//   e.preventDefault();
-//   console.log("made it here");
-// });
 const express = require("express");
 const app = express();
 const port = 2000;
@@ -18,8 +9,6 @@ let testUsers = [
   { username: "Naman", password: "4321", email: "Naman@gmail.com" },
   { usernmae: "Takhmina", password: "qwer", email: "Takhmina@gmail.com" },
 ];
-
-// console.log(testUsers);
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname + "/client/pages/loginPage.html"));
