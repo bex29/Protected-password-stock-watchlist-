@@ -4,6 +4,10 @@ const port = 2000;
 const path = require("path");
 app.use(express.static(path.join(__dirname + "/client")));
 app.use(express.json());
+let storage=[
+  {title:"test1", desc:"sucessful"},
+  {title:"fuck server",desc:"i love coding"}
+];
 let testUsers = [
   { username: "Bex", password: "1234", email: "bex@gmail.com" },
   { username: "Naman", password: "4321", email: "Naman@gmail.com" },
@@ -28,6 +32,11 @@ app.get("/about.html", (req, res) => {
 app.get("/getUserData", (req, res) => {
   let obj = testUsers;
   res.send(JSON.stringify(obj));
+});
+app.get("/getStorage", (req, res) => {
+  let file = storage;
+  console.log(JSON.stringify(file))
+  res.send(JSON.stringify(file));
 });
 app.post("/registerUser", (req, res) => {
   //const data = JSON.parse(req);
