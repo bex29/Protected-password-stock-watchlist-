@@ -1,7 +1,7 @@
 $(document).ready(function(){
   let storage=[];
   var request = new XMLHttpRequest();
-  request.open("GET", "http://localhost:2000/getfile");
+  request.open("GET", "http://localhost:2000/getStorage");
   request.onload = function () {
     var resp = JSON.parse(request.response);
     storage = resp;
