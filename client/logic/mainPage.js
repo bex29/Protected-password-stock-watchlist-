@@ -8,19 +8,11 @@ function CreateEntry() {
   $(newDiv).attr("class", "entry");
   $(newDiv).attr("id", new_title);
   var title = document.createElement("h3");
-<<<<<<< HEAD
-  $(title).attr("id", "h3");
-  $(title).append(new_title);
-  $(newDiv).append(title);
-  var info = document.createElement("p");
-  $(info).attr("id", "p");
-=======
 //   $(title).attr("id",'h3');
   $(title).append(new_title);
   $(newDiv).append(title);
   var info = document.createElement("p");
 //   $(info).attr('id','p')
->>>>>>> 18b4a814e29c0719b9c353075ab703b64aaea1b1
   $(info).append(new_entry);
   $(newDiv).append(info);
   $(newDiv).append("<br>");
@@ -37,19 +29,9 @@ function CreateEntry() {
 function del(elem) {
   $(elem).parent("div").remove();
 }
-<<<<<<< HEAD
-// function edit(elem) {
-//   new_title = prompt("PLEASE ENTER NEW TITLE : ");
-//   new_entry = prompt("PLEASE ENTER NEW DETAIL : ");
-//   $(elem).removeChild(document.getElementById("h3"));
-//   $(elem).removeChild(document.getElementById("p"));
-// //   $(elem).parent("div").document.getElementById("p").innerHTML(new_entry);
-// }
-=======
 function edit(elem) {
   new_title = prompt("PLEASE ENTER NEW TITLE : ");
   new_entry = prompt("PLEASE ENTER NEW DETAIL : ");
   elem.parentElement.getElementsByTagName("h3")[0].innerHTML = new_title;
   elem.parentElement.getElementsByTagName("p")[0].innerHTML = new_entry;
 }
->>>>>>> 18b4a814e29c0719b9c353075ab703b64aaea1b1

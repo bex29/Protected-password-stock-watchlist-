@@ -7,7 +7,6 @@
 //   e.preventDefault();
 //   console.log("made it here");
 // });
-<<<<<<< HEAD:client/logic/register.js
 let testUsers = [
   { username: "Bex", password: "chad", email: "bex@chad.com" },
   { username: "Naman", password: "Im a nerd", email: "Naman@nerd.ca" },
@@ -61,8 +60,6 @@ function checkLowerCapitalCase(input) {
   return String(input).match(regularExpression);
 }
 
-=======
->>>>>>> e9d929b3f344d1f33b1511d8d1a53f44a0ed1866:logic/script.js
 const form = document.getElementById("register");
 console.log("made it");
 form.addEventListener("submit", (ev) => {
@@ -70,10 +67,13 @@ form.addEventListener("submit", (ev) => {
   let username = document.getElementById("username").value;
   let password = document.getElementById("password").value;
   let email = document.getElementById("email").value;
+  testUsers.push(username, password, email);
   window.location.href = "../pages/loginPage.html";
+  console.log(testUsers);
 
   if (!checkPassword(password)) {
     document.getElementById("password").className = "test";
   }
 });
 
+console.log(testUsers);

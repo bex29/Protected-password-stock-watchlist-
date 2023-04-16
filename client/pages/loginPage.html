@@ -1,46 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Protected Diary</title>
-    <link href="../styles/login.css" rel="stylesheet" />
-    <!--<script src="main_java.js"></script>-->
-  </head>
-  <body>
-    <section>
-      <div class="form-box">
-        <div class="form-value">
-          <form action="" id="loginForm">
-            <h2>Login</h2>
-            <div class="inputbox">
-              <input type="email" id="email" required />
-              <!--password entry-->
-              <label for="">EMAIL | USERNAME</label>
-            </div>
-            <div class="inputbox">
-              <input type="password" id="password" required />
-              <!--password entry-->
-              <label for="">Password</label>
-            </div>
-            <div class="forget">
-              <label
-                ><input type="checkbox" />Remember me
-                <a href=""> Forget Password</a></label
-              >
-            </div>
-            <a href="./mainPage.html"><button>Login</button></a>
-            <div class="register">
-              <p>
-                Don't have a account <a href="./register.html"> Register</a>
-              </p>
-            </div>
-          </form>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Protected Diary</title>
+  <link href="../styles/login.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="../resources/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,600" rel="stylesheet">
+  <!--<script src="main_java.js"></script>-->
+</head>
+<body>
+  <div class="split right">
+    <div class="form-box">
+      <div class="form-value">
+        <form action="" id="loginForm">
+          <img src="../resources/loginbg/Frame 1.svg" alt="Logo Image">
+          <p>Login to your account</p>
+          <div class="inputbox">
+            <input type="email" placeholder="Email" id="email" required />
+            <!--password entry-->
+          </div>
+          <div class="inputbox">
+            <input type="password" placeholder="Password" id="password" required />
+            <!--password entry-->
+          </div>
+          <a href="./mainPage.html"><button>Login</button></a>
+          <div class="register">
+            <p>
+              Don't have a account? <a href="./register.html"> Register here</a>
+            </p>
+           
+          </div>
+        </form>
       </div>
-    </section>
-    <footer>
-      <p id="copyright">&#169;Developed by Full Stack Wolves</p>
-    </footer>
-    <script src="../logic/loginLogic.js"></script>
-  </body>
+    </div>
+   
+  </div>
+
+  <div class="split left">
+    <div class="centered">
+      <img src="../resources/loginbg/loginimg.svg" alt="Side Image">
+      <h2>Welcome to Stock Diary!</h2>
+      <p>Create new diary entires, get access to the stock market information and weather all in one app developed by the Full Stack Wolves</p>
+     
+    </div>
+    
+  </div>
+
+  
+  <script src="../logic/loginLogic.js"></script>
+  
+ 
+</body>
+
 </html>
