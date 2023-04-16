@@ -12,8 +12,7 @@ const app = express();
 const port = 2000;
 const path = require("path");
 app.use(express.static(path.join(__dirname + "/client")));
-const axios = require("axios");
-
+app.use(express.json());
 let testUsers = [
   { username: "Bex", password: "1234", email: "bex@gmail.com" },
   { username: "Naman", password: "4321", email: "Naman@gmail.com" },
@@ -42,8 +41,11 @@ app.get("/getUserData", (req, res) => {
   res.send(JSON.stringify(obj));
 });
 app.post("/registerUser", (req, res) => {
-  const data = JSON.parse(req.response);
-  res.send("hallo");
+  //const data = JSON.parse(req);
+  //testUsers.push(data);
+  let userData = req.body;
+  console.log(req.body);
+  testUsers.push(userData);
 });
 app.listen(port, () => {
   console.log(`listening on port ${port}`);

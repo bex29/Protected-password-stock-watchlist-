@@ -1,12 +1,6 @@
 const xhr = new XMLHttpRequest();
-xhr.open("POST", "http://localhost:2000/register.html");
+xhr.open("POST", "http://localhost:2000/registerUser");
 xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
-
-let testUsers = [
-  { username: "Bex", password: "chad", email: "bex@chad.com" },
-  { username: "Naman", password: "Im a nerd", email: "Naman@nerd.ca" },
-  { usernmae: "Tosia", password: "omgNerd5000", email: "bigNerd@nerd.ca" },
-];
 
 function showWrong(input, message) {
   const formControl = input.parentElement;
@@ -59,17 +53,23 @@ const form = document.getElementById("form");
 console.log("made it");
 form.addEventListener("submit", (ev) => {
   ev.preventDefault();
-  let username = document.getElementById("username").value;
-  let password = document.getElementById("password").value;
-  let email = document.getElementById("email").value;
-  testUsers.push(username, password, email);
+  let usernameRegister = document.getElementById("username").value;
+  let passwordRegister = document.getElementById("password").value;
+  let emailRegister = document.getElementById("email").value;
   window.location.href = "../pages/loginPage.html";
 
   const body = JSON.stringify({
-    userId: 1,
-    title: "Fix my bugs",
-    completed: false,
+    username: usernameRegister,
+    password: passwordRegister,
+    email: emailRegister,
   });
+  xhr.onload = () => {
+    console.log(xhr.response);
+    if (xhr.readyState == 4 && xhr.status == 201) {
+      console.log(JSON.parse(xhr.responseText));
+    } else {
+      console.log(`Error: ${xhr.status}`);
+    }
+  };
   xhr.send(body);
-  console.log(testUsers);
 });
