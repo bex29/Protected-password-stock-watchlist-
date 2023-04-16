@@ -104,7 +104,18 @@ input {
   margin: 25px 0 10px;
 }
 
+.sign {
+  color: #272727;
+  margin: 25px 0 10px;
+}
+
 .register p a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #3125E7;
+  margin-left: 2px;
+}
+.sign p a {
   text-decoration: none;
   font-weight: 600;
   color: #3125E7;
@@ -112,6 +123,10 @@ input {
 }
 
 .register p a:hover {
+  text-decoration: underline;
+}
+
+.sign p a:hover {
   text-decoration: underline;
 }
 
@@ -144,5 +159,4 @@ button:hover {
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
-
 
