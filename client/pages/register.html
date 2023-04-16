@@ -6,43 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign up</title>
     <link rel="icon" type="image/x-icon" href="../resources/favicon.png">
-    <link href="../styles/register.css" rel="stylesheet"></link>
+    <link href="../styles/login.css" rel="stylesheet" />
   </head>
   <body>
-    <section>
+    <div class="split right">
       <div class="form-box">
         <div class="form-value">
           <form id="form" action="" id="register">
-            <h2>Register</h2>
+            <img src="../resources/loginbg/Frame 1.svg" alt="Logo Image">
+          <p>Register</p>
             <div class="inputbox">
-              <input id="username" type="text" required />
-              <label for="">Username</label>
+              <input type="text" id="username" placeholder="Username" required/>
             </div>
             <div class="inputbox">
-              <input type="email" required id="email" />
-              <label for="">Email</label>
+              <input type="email" id="email" placeholder="Email" required/>
             </div>
             <div class="inputbox">
-              <input id="password" type="password" required />
-              <label for="">Password</label>
+              <input type="password" id="password" placeholder="Password" required/>
             </div>
             <div class="inputbox">
-              <input type="password" required id="password" />
-              <label for="">Confirm Password</label>
+              <input type="password"  id="password" placeholder="Confirm Password" required/>
             </div>
             <a href="./mainPage.html"><button type="submit">Register</button></a>
             <div class="sign">
               <p>
-                <a href="./loginPage.html">Sign In Instead</a>
+                Already have an account? <a href="./loginPage.html">Sign In Instead</a>
               </p>
             </div>
           </form>
         </div>
       </div>
-    </section>
-    <footer class="footer">
-      <p id="copyright">&#169;Developed by Full Stack Wolves</p>
-    </footer>
+    </div>
+
+    <div class="split left">
+      <div class="centered">
+        <img src="../resources/loginbg/loginimg.svg" alt="Side Image">
+        <h2>Welcome to Stock Diary!</h2>
+        <p>Create new diary entires, get access to the stock market information and weather all in one app developed by the Full Stack Wolves</p>
+       
+      </div>
+      
+    </div>
+
+
+
+
     <script src="../logic/register.js"></script>
   </body>
 </html>

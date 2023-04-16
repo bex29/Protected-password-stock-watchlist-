@@ -34,10 +34,21 @@ loginForm.addEventListener("submit", (ev) => {
   ev.preventDefault();
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
+
+const passwordMessage = document.getElementById("wrongMessage");
+const borderWrong1 = document.getElementById("wrongBorder1");
+const borderWrong2 = document.getElementById("wrongBorder2");
+
   console.log(email, password);
   if (checkUserEmailPassword(email, password)) {
     window.location.href = "../pages/mainPage.html";
   } else {
-    window.location.href = "../pages/testPage.html";
-  }
+    passwordMessage.textContent = "Incorrect email or password";
+    passwordMessage.style.color = "red";
+    passwordMessage.style.fontWeight = "500";
+    passwordMessage.style.margin = "-15px 0 15px ";
+    borderWrong1.style.borderColor = "red";
+    borderWrong2.style.borderColor = "red";
+
+}
 });
