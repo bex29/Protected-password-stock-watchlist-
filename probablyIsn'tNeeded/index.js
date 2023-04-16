@@ -9,7 +9,7 @@
 // });
 const express = require("express");
 const app = express();
-const port = 420;
+const port = 2904;
 const path = require("path");
 app.use(express.static(path.join(__dirname + "/client")));
 
@@ -27,24 +27,6 @@ function checkPassword(password) {
   }
   return true;
 }
-
-// const form = document.getElementById("form");
-// console.log("made it");
-// form.addEventListener("submit", (ev) => {
-//   ev.preventDefault();
-//   let username = document.getElementById("username").value;
-//   let password = document.getElementById("password").value;
-//   let email = document.getElementById("email").value;
-//   testUsers.push(username, password, email);
-//   window.location.href = "../pages/loginPage.html";
-//   console.log(testUsers);
-
-//   if (!checkPassword(password)) {
-//     document.getElementById("password").className = "test";
-//   }
-// });
-
-// console.log(testUsers);
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname + "/client/pages/loginPage.html"));

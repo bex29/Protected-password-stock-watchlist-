@@ -5,32 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign up</title>
-    <link rel="icon" type="image/x-icon" href="../resources/favicon.png">
+    <link rel="icon" type="image/x-icon" href="../resources/favicon.png" />
     <link href="../styles/login.css" rel="stylesheet" />
   </head>
   <body>
     <div class="split right">
       <div class="form-box">
         <div class="form-value">
-          <form id="form" action="" id="register">
-            <img src="../resources/loginbg/Frame 1.svg" alt="Logo Image">
-          <p>Register</p>
+          <form id="form" action="">
+            <img src="../resources/loginbg/Frame 1.svg" alt="Logo Image" />
+            <p>Register</p>
             <div class="inputbox">
-              <input type="text" id="username" placeholder="Username" required/>
+              <input
+                type="text"
+                id="username"
+                placeholder="Username"
+                required
+              />
             </div>
             <div class="inputbox">
-              <input type="email" id="email" placeholder="Email" required/>
+              <input type="email" id="email" placeholder="Email" required />
             </div>
             <div class="inputbox">
-              <input type="password" id="password" placeholder="Password" required/>
+              <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                required
+              />
             </div>
             <div class="inputbox">
-              <input type="password"  id="password" placeholder="Confirm Password" required/>
+              <input
+                type="password"
+                id="password"
+                placeholder="Confirm Password"
+                required
+              />
             </div>
-            <a href="./mainPage.html"><button type="submit">Register</button></a>
+            <a href="./mainPage.html"
+              ><button type="submit">Register</button></a
+            >
             <div class="sign">
               <p>
-                Already have an account? <a href="./loginPage.html">Sign In Instead</a>
+                Already have an account?
+                <a href="./loginPage.html">Sign In Instead</a>
               </p>
             </div>
           </form>
@@ -40,17 +58,15 @@
 
     <div class="split left">
       <div class="centered">
-        <img src="../resources/loginbg/loginimg.svg" alt="Side Image">
+        <img src="../resources/loginbg/loginimg.svg" alt="Side Image" />
         <h2>Welcome to Stock Diary!</h2>
-        <p>Create new diary entires, get access to the stock market information and weather all in one app developed by the Full Stack Wolves</p>
-       
+        <p>
+          Create new diary entires, get access to the stock market information
+          and weather all in one app developed by the Full Stack Wolves
+        </p>
       </div>
-      
     </div>
 
-
-
-
-    <script src="../logic/register.js"></script>
+    <script type="module" src="../logic/register.js"></script>
   </body>
 </html>

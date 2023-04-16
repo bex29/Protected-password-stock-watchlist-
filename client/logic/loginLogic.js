@@ -1,12 +1,14 @@
 const loginForm = document.getElementById("loginForm");
 
-let testUsers = [
-  { username: "Bex", password: "chad", email: "bex@chad.com" },
-  { username: "Naman", password: "1234", email: "Naman@york" },
-  { username: "Tosia", password: "omgNerd5000", email: "bigNerd@nerd.ca" },
-];
+let testUsers = [];
 
-console.log("MADE IT HERE");
+var request = new XMLHttpRequest();
+request.open("GET", "http://localhost:2000/getUserData");
+request.onload = function () {
+  var resp = JSON.parse(request.response);
+  testUsers = resp;
+};
+request.send();
 
 function checkUserEmailPassword(oneEmail, onePassword) {
   console.log("funcition lol");
@@ -35,9 +37,9 @@ loginForm.addEventListener("submit", (ev) => {
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
 
-const passwordMessage = document.getElementById("wrongMessage");
-const borderWrong1 = document.getElementById("wrongBorder1");
-const borderWrong2 = document.getElementById("wrongBorder2");
+  const passwordMessage = document.getElementById("wrongMessage");
+  const borderWrong1 = document.getElementById("wrongBorder1");
+  const borderWrong2 = document.getElementById("wrongBorder2");
 
   console.log(email, password);
   if (checkUserEmailPassword(email, password)) {
@@ -49,6 +51,5 @@ const borderWrong2 = document.getElementById("wrongBorder2");
     passwordMessage.style.margin = "-15px 0 15px ";
     borderWrong1.style.borderColor = "red";
     borderWrong2.style.borderColor = "red";
-
-}
+  }
 });

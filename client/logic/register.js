@@ -1,12 +1,7 @@
-// const form = document.getElementById("register");
-// console.log("made it here");
-// console.log(form);
-// const form = document.getElementById("register");
-// console.log(form);
-// form.addEventListener((e) => {
-//   e.preventDefault();
-//   console.log("made it here");
-// });
+const xhr = new XMLHttpRequest();
+xhr.open("POST", "http://localhost:2000/register.html");
+xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+
 let testUsers = [
   { username: "Bex", password: "chad", email: "bex@chad.com" },
   { username: "Naman", password: "Im a nerd", email: "Naman@nerd.ca" },
@@ -60,7 +55,7 @@ function checkLowerCapitalCase(input) {
   return String(input).match(regularExpression);
 }
 
-const form = document.getElementById("register");
+const form = document.getElementById("form");
 console.log("made it");
 form.addEventListener("submit", (ev) => {
   ev.preventDefault();
@@ -69,11 +64,12 @@ form.addEventListener("submit", (ev) => {
   let email = document.getElementById("email").value;
   testUsers.push(username, password, email);
   window.location.href = "../pages/loginPage.html";
+
+  const body = JSON.stringify({
+    userId: 1,
+    title: "Fix my bugs",
+    completed: false,
+  });
+  xhr.send(body);
   console.log(testUsers);
-
-  if (!checkPassword(password)) {
-    document.getElementById("password").className = "test";
-  }
 });
-
-console.log(testUsers);

@@ -1,3 +1,5 @@
+
+
 function CreateEntry() {
   new_title = document.getElementById("Entry_Title").value;
   // console.log(new_title);
@@ -41,17 +43,17 @@ function edit(elem) {
 }
 
 function saveEntry(new_title, new_entry) {
-  storage = [] //get it from server;
+  storage = []; //get it from server;
   storage[new_title] = new_entry;
   //send it to server;
 }
 
 function loadEntry() {
-  storage = [] //get it from server
+  storage = []; //get it from server
   for (key in storage) {
     value = storage[key];
-    new_title=key;
-    new_entry=value;
+    new_title = key;
+    new_entry = value;
     main_box = document.getElementById("entryList");
     var newDiv = document.createElement("div");
     $(newDiv).attr("class", "entry");
