@@ -15,9 +15,9 @@ app.use(express.static(path.join(__dirname + "/client")));
 const axios = require("axios");
 
 let testUsers = [
-  { username: "Bex", password: "chad", email: "bex@chad.com" },
-  { username: "Naman", password: "Im a nerd", email: "Naman@nerd.ca" },
-  { usernmae: "Tosia", password: "omgNerd5000", email: "bigNerd@nerd.ca" },
+  { username: "Bex", password: "1234", email: "bex@gmail.com" },
+  { username: "Naman", password: "4321", email: "Naman@gmail.com" },
+  { usernmae: "Takhmina", password: "qwer", email: "Takhmina@gmail.com" },
 ];
 
 // console.log(testUsers);

@@ -1,5 +1,3 @@
-
-
 function CreateEntry() {
   new_title = document.getElementById("Entry_Title").value;
   // console.log(new_title);
