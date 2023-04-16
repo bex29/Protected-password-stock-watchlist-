@@ -8,11 +8,11 @@ function CreateEntry() {
   $(newDiv).attr("class", "entry");
   $(newDiv).attr("id", new_title);
   var title = document.createElement("h3");
-  $(title).attr("id",'h3');
+  $(title).attr("id", "h3");
   $(title).append(new_title);
   $(newDiv).append(title);
   var info = document.createElement("p");
-  $(info).attr('id','p')
+  $(info).attr("id", "p");
   $(info).append(new_entry);
   $(newDiv).append(info);
   $(newDiv).append("<br>");
