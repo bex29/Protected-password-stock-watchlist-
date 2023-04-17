@@ -42,7 +42,7 @@ app.post("/registerUser", (req, res) => {
   //const data = JSON.parse(req);
   //testUsers.push(data);
   let userData = req.body;
-  console.log(req.body);
+  //console.log(req.body);
   testUsers.push(userData);
 });
 app.listen(port, () => {
