@@ -63,24 +63,10 @@ input:valid ~ label {
   padding: 0 35px 0 5px;
   color: #fff;
 }
-/*
-.sign{
-  margin: -15px 0 15px;
-  font-size: .9em;
-  color:#fff;
-  display:flex;
-  justify-content:center;
-}
-.sign label input{
-  margin-right: 3px;
-}
-.sign label a{
-  color:#fff;
-  text-decoration: none;
-}
-.sign label a:hover{
-  text-decoration: underline;
-}*/
+
+
+
+
 button {
   width: 100%;
   height: 40px;
@@ -117,3 +103,6 @@ button:hover {
   font-weight: 1000;
   position: relative;
 }
+
+
+

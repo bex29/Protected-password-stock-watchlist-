@@ -29,7 +29,7 @@ h2 {
   padding-top: 20px;
 }
 
-/* Control the left side */
+/* Control the let side */
 .left {
   left: 0;
   background: linear-gradient(147deg, #447FE3 1.89%, #3125E7 103.34%);
@@ -81,7 +81,18 @@ h2 {
   border: 1px solid #bcbcbc;
   border-radius: 4px;
 }
+/* .inputbox.correct input {
+  border-color: green;
+}
 
+.inputbox.wrong input {
+  border-color: red;
+}
+
+.inputbox .error {
+  color: red;
+  
+} */
 input {
   width: 100%;
   height: 42px;
