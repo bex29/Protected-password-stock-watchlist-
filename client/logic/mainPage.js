@@ -95,3 +95,8 @@ function edit(elem) {
 // // function loadEntry() {
   
 // // }
+
+
+function hideEmptyImg() {
+  document.getElementById("emptyEntries").style.display = "none";
+}

@@ -89,6 +89,13 @@
   </section>
 
 
+<!-- when no entries -->
+<div class="emptyEntries" id="emptyEntries">
+  <img src="../resources/main/empty_img.svg" alt="Empty Image">
+<h2>Your diary is empty</h2>
+<p>Start writing something awesome!✍️</p>
+</div>
+
   <div class="entryList" id="entryList">
   </div>
   <div class="inputArea">
@@ -96,7 +103,7 @@
       <input type="text" placeholder="Enter the title" id="Entry_Title" name="title" class="titleBox"><br><br>
       <textarea rows="5" cols="60" name="description" class="inputbox" placeholder="Enter your post here..." id="Entry_info"></textarea>
       <br>
-      <button class="submit" onclick="CreateEntry()">Submit</button>
+      <button class="submit" onclick="CreateEntry(); hideEmptyImg()">Submit</button>
     </div>
 
 
