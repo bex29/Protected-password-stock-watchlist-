@@ -70,6 +70,7 @@ function CreateEntry() {
 
 function del(elem) {
   $(elem).parent("div").remove();
+  showEmptyImg();
 }
 
 function edit(elem) {
@@ -99,4 +100,13 @@ function edit(elem) {
 
 function hideEmptyImg() {
   document.getElementById("emptyEntries").style.display = "none";
+}
+
+function showEmptyImg(){
+  // myElem=null;
+  // var myElem = document.getElementsByClassName('entry');
+  // console.log(myElem)
+  if ($('.entry').length === 0) {
+    document.getElementById("emptyEntries").style.display = "block";
+  };
 }
