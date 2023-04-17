@@ -74,12 +74,22 @@ p {
   text-align: center;
 }
 .btn {
-  color: #fff;
-  background: var(--primaryColor);
+  width: 40%;
+  height: 42px;
+  border-radius: 40px;
+  margin-top: 10px;
+  background-image: linear-gradient(to right, #447FE3, #3125E7, #447FE3, #3125E7);
+  border: none;
+  outline: none;
   cursor: pointer;
-  border-radius: 5px;
-  font-size: 12px;
-  padding: 5px 12px;
+  font-size: 1em;
+  font-weight: 600;
+  color: #ffffff;
+  background-size: 300% 100%;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 .money-img {
   width: 150px;
