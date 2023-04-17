@@ -1,32 +1,23 @@
-const { assert } = require("chai");
-
 assert = chai.assert;
 
 describe('Testing function', function () {
 
     it('Test 1: Check if passowrd is less than 8 characters', () => {
-        let pass='';
-       for (var i=1;i<=8;i++){
-        pass += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }assert.equal(checkPassword(pass),false)
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        let pass = '';
+        const charactersLength = characters.length;
+        for (var j = 1; j < 1000; j++) {
+            assert.equal(checkPassword(Math.random().toString(36).slice(2, 10)), true);
+        }
     });
 
-    // it('Test 2: generateNum(5) returns >= 1', () => {
-    //     for (var i = 1; i <= 1000; i++) {
-    //         assert(generateNum(5)>=1);
-    //     }
-    // });
+    it("Test 2: Check if it's a valid email", () => {
+        var Chance = require('chance');
+        // Instantiate Chance so it can be used
+        var chance = new Chance();
+        for (var m = 1; m < 1000; m++) {
+            assert.equal(isValidEmail(chance.email()), true);
+        }
+    });
 
-    // it('Test 3: generateNum(5) returns <= 5', () => {
-    //     for (var i = 1; i <= 1000; i++) {
-    //         assert(generateNum(5)<=5);
-    //     }
-        
-    // });
-    // it('Test 4: generateNum(10) and returned values are in [1,10]', () => {
-    //     for (var i = 1; i <= 1000; i++) {
-    //         assert(generateNum(10)>=1 && generateNum(10)<=10);
-    //     }
-        
-    // });
 });
