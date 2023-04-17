@@ -12,6 +12,7 @@ function showWrong(input, message) {
 function showRight(input, message) {
   const formControl = input.parentElement;
   formControl.className = "right";
+  return "true";
 }
 function checkPassword(password) {
   if (password.length < 8) {
