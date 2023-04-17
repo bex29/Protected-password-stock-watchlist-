@@ -32,6 +32,7 @@ function isValidEmail(email) {
 function checkLen(input, minimum, maximum) {
   if (input.value.length < minimum || input.value.length > maximum) {
     showWrong(input, "Please enter a decent sized input bro");
+    ;
   }
 }
 
