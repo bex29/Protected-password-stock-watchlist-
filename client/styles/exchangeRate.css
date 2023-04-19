@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=poppins+sans-serif");
+
 :root {
-  --primaryColor: rgb(38, 82, 166);
+  --primaryColor: #2057EA;
 }
 header {
   padding: 10px;
@@ -43,7 +45,7 @@ nav li {
 
 body {
   background-color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   
   height: 100vh;
   margin: 0;
@@ -69,12 +71,18 @@ display: flex;
 }
 h1 {
   color: var(--primaryColor);
+  font-size: 2em;
+ 
 }
-p {
+.main p {
   text-align: center;
+  color: #272727;
+  margin-bottom: 40px;
+  margin-top: -10px;
+  
 }
 .btn {
-  width: 40%;
+  width: 20%;
   height: 42px;
   border-radius: 40px;
   margin-top: 10px;
@@ -86,6 +94,15 @@ p {
   font-weight: 600;
   color: #ffffff;
   background-size: 300% 100%;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.btn:hover {
+  color: #ffffff;
+  background-image: linear-gradient(to right, #447FE3, #3125E7, #447FE3, #3125E7);
+  background-position: 100% 20%;
   -moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
@@ -118,6 +135,7 @@ p {
   background: transparent;
   font-size: 30px;
   text-align: right;
+  
 }
 .swap-rate-container {
   display: flex;
@@ -139,4 +157,19 @@ button:focus {
   .currency input {
     width: 200px;
   }
+}
+
+.main img{
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+footer {
+  text-align: center;
+  background-color: #E8E9EE;
+  padding: 10px;
+  margin-bottom: 0;
+  color: #272727;
+  font-size: 0.9em;
+  font-weight: 300;
+  margin-top: 50px;
 }
